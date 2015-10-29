@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>添加管理员信息</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+</head>
+<script language="javascript">
+function check(form1){
+	if(form1.ma_name.value==""){
+		alert("请输入管理员名称!");form1.ma_name.focus();return false;
+	}
+  if(form1.ma_name.value.length<3 || form1.ma_name.value.length>10){
+    alert("用户名须在3~10位之间！");form1.ma_name.focus();return false;
+  }
+	if(form1.ma_pwd.value==""){
+		alert("请输入管理员密码!");form1.ma_pwd.focus();return false;
+	}
+  if(form1.ma_pwd.value.length<3){
+    alert("密码必须3位以上！");form1.ma_name.focus();return false;
+  }
+	if(form1.pwd1.value==""){
+		alert("请确认管理员密码!");form1.pwd1.focus();return false;
+	}		
+	if(form1.pwd.value!=form1.pwd1.value){
+		alert("您两次输入的管理员密码不一致，请重新输入!");form1.pwd1.focus();return false;
+	}
+}
+</script>
+
+<script type="text/javascript">
+ /****使用ajax显示保存成功信息****/
+window.onload=function(){
+  //获取表单信息
+  var fm=document.getElementsByTagName("form")[0];
+  //添加提交事件
+  fm.onsubmit=function(evt){
+  //通过html5标签获取信息
+  var ma_info=new FormData(fm);
+  //实例化ajax
+  var xhr=new XMLHttpRequest();
+  //ajax改变事件
+  xhr.onreadystatechange=function(){
+    if(xhr.readyState==4){
+      document.getElementById("info").innerHTML=xhr.responseText;
+      setTimeout('window.close()', 2000);
+    }
+  }
+  xhr.open("post","{$smarty.const.__CONTROLLER__}/index/"+Math.random());
+  xhr.send(ma_info);
+  //阻止表单提交
+  evt.preventDefault();
+  
+  }
+  }
+  
+</script>
+<body>
+<table width="292" height="175" border="0" cellpadding="0" cellspacing="0" background="{$smarty.const.IMG_URL}subBG.jpg">
+  <tr>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="3%" height="25">&nbsp;</td>
+        <td width="94%">&nbsp;</td>
+        <td width="3%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><table width="100%" height="131"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" valign="top">	
+            <form name="form1" method="post" action="{$smarty.const.__CONTROLLER__}">
+	<table height="123"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="97" height="30" align="center">管理员名称：</td>
+        <td width="178">
+          <input name="ma_name" type="text"></td>
+      </tr>
+      <tr>
+        <td height="28" align="center">管理员密码：</td>
+        <td><input name="ma_pwd" type="password" id="pwd"></td>
+      </tr>
+      <tr>
+        <td height="28" align="center">确认密码：</td>
+        <td><input name="pwd1" type="password" id="pwd1"></td>
+      </tr>
+      <tr>
+        <td height="37" align="center">&nbsp;</td>
+        <td><input name="submit" type="submit" class="btn_grey" value="保存" onClick="return check(form1)">
+&nbsp;
+<input name="submit2" type="button" class="btn_grey" value="关闭" onClick="window.close();">&nbsp;&nbsp;<span id="info"></span></td>
+      </tr>
+    </table>
+	</form></td>
+          </tr>
+        </table></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>

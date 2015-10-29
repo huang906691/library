@@ -1,0 +1,773 @@
+[ 2015-10-20T20:48:11+08:00 ] 127.0.0.1 /library/library/index.php/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2015-10-20T21:42:03+08:00 ] 127.0.0.1 /library/library/index.php/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2015-10-20T21:42:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.1901s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-20T21:42:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-10-20T21:42:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-10-20T21:45:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-10-20T21:45:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-10-20T21:45:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-10-20T21:45:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-10-20T21:45:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+
+[ 2015-10-20T21:45:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html?&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 10, 10 [ RunTime:0.0208s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2015-10-20T21:45:31+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html?&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 10, 10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2015-10-20T21:45:31+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-10-20T21:45:33+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2015-10-20T21:45:33+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-10-20T21:45:33+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-10-20T21:45:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-10-20T21:45:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-10-20T21:45:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+
+[ 2015-10-20T21:45:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2015-10-20T21:45:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2015-10-20T21:45:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0037s ]
+SQL: SELECT `ma_name`,`ma_id` FROM `li_manager`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-10-20T21:45:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2015-10-20T21:45:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+
+[ 2015-10-20T21:45:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-10-20T21:45:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-10-20T21:45:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+
+[ 2015-10-20T21:45:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\f2e638ab30a14b8e62cfd556563412e091b9f248.file.votelist.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\f2e638ab30a14b8e62cfd556563412e091b9f248.file.votelist.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.402237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.402340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-10-20T21:45:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2015-10-20T21:45:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Vote/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+
+[ 2015-10-20T21:45:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `li_booktype` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_booktype` LIMIT 1   [ RunTime:0.0005s ]
+SQL: select by_id,by_name from li_booktype Limit 0, 8 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-10-20T21:45:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-10-20T21:45:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2015-10-20T21:45:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-10-20T21:45:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `li_readertype`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\6faa1e1757ad4ac38f9a901bc99c28ebb8cd4e2f.file.readerType.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\6faa1e1757ad4ac38f9a901bc99c28ebb8cd4e2f.file.readerType.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2015-10-20T21:45:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-10-20T21:45:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2015-10-20T21:45:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2015-10-20T21:45:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+
+[ 2015-10-20T21:45:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2015-10-20T21:45:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-10-20T21:45:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/reader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `li_reader` [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_reader` LIMIT 1   [ RunTime:0.0294s ]
+SQL: select a.re_id,a.re_name,a.re_code,b.rt_name,c.pa_type,a.re_number,a.re_tel,a.re_email,a.re_num from li_reader as a left join li_readertype as b on a.re_typeid=b.rt_id left join li_papers as c on a.re_paperid=c.pa_id Limit 0, 3 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\c7396025aacd1cceebd15cd5f50f7dc733ba2ba6.file.reader.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\c7396025aacd1cceebd15cd5f50f7dc733ba2ba6.file.reader.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2015-10-20T21:45:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-10-20T21:45:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/book
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_stock,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id Limit 0, 10  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2015-10-20T21:45:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-10-20T21:45:45+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookInfo/bo_id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0045s ]
+SQL: SELECT a.*,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id where bo_id=8 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2015-10-20T21:45:45+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookInfo/bo_id/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+[ 2015-10-20T21:45:48+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookEdit/bo_id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `li_booktype` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `li_booktype`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `li_bookcase` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `li_bookcase`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `li_press` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `li_press`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0040s ]
+SQL: SELECT a.*,b.by_name,c.pr_id,c.pr_name,d.ca_id,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id where bo_id=8 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\1e5ab511bbf945ab4423e43ef536bbb738e9fab9.file.book_edit.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\1e5ab511bbf945ab4423e43ef536bbb738e9fab9.file.book_edit.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index: v F:\homework\library\library\Runtime\Cache\1e5ab511bbf945ab4423e43ef536bbb738e9fab9.file.book_edit.html.php 第 114 行.
+NOTIC: [8] Trying to get property of non-object F:\homework\library\library\Runtime\Cache\1e5ab511bbf945ab4423e43ef536bbb738e9fab9.file.book_edit.html.php 第 114 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2015-10-20T21:45:49+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookEdit/bo_id/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-10-20T21:45:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/book
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_stock,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id Limit 0, 10  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2015-10-20T21:45:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2015-10-20T21:46:02+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-10-20T21:46:02+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-10-20T21:46:02+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/borrowlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2015-10-20T21:46:02+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001197s ]
+
+[ 2015-10-20T21:46:02+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-10-20T21:46:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-10-20T21:46:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+
+[ 2015-10-20T21:46:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2015-10-20T21:46:04+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/bookBorrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-10-20T21:46:05+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-10-20T21:46:05+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-10-20T21:46:05+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-10-20T21:46:05+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/bookRenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2015-10-20T21:46:06+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-10-20T21:46:08+08:00 ] 127.0.0.1 /library/library/index.php/Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2015-10-20T21:46:08+08:00 ] 127.0.0.1 /library/library/index.php/Admin/index/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+

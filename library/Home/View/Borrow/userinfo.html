@@ -1,0 +1,160 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/fly.ico" type="image/x-icon">
+<head>
+<title>图书馆管理系统</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+</head>
+<script type="text/javascript">
+function check(form1){
+	if(form1.re_username.value==""){
+		alert("请输入用户名!");form1.re_username.focus();return false;
+	}
+  if(form1.re_name.value==""){
+    alert("请输入姓名!");form1.re_name.focus();return false;
+  }
+  if(form1.re_pwd.value==""){
+    alert("密码不能为空!");form1.re_pwd.focus();return false;
+  }
+  if(form1.pwd2.value==""){
+    alert("确认密码不能为空!");form1.pwd.focus();return false;
+  }
+  if(form1.pwd2.value!=form1.re_pwd.value){
+    alert("密码不一致!");form1.pwd2.focus();return false;
+  }
+	if(form1.re_number.value==""){
+		alert("请输入证件号码!");form1.re_number.focus();return false;
+	}
+  document.form1.submit();
+}
+
+</script>
+<body>
+<table width="778" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+	 {include file="../Index/unavigation.html"}
+	</td>
+	</tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="99%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td height="510" valign="top" style="padding:5px;"><table width="98%" height="487"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="22" valign="top" class="word_orange">当前位置：个人中心&gt; 修改个人信息&gt;&gt;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" height="493"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+
+    <td align="center" valign="top">	
+    <form name="form1" method="post" action="{$smarty.const.__CONTROLLER__}/userinfo">
+      <table width="600" height="426"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    {foreach $info as $i}
+        <tr>
+          <td align="center">用户名</td>
+          <td height="25"><input name="re_username" type="text" id="username" value="{$i.re_username}">
+      *<span>{$errorinfo.re_username|default:''}</span> </td>
+        </tr>
+        <tr>
+          <td align="center">密码</td>
+          <td height="23"><input name="re_pwd" type="password" id="pwd1" value="" placeholder="密码不能为空">
+      * <span>{$errorinfo.re_pwd|default:''}</span></td>
+        </tr>
+        <tr>
+          <td align="center">确认密码</td>
+          <td height="24"><input name="pwd2" type="password" id="pwd2" value="">
+      *<span>{$errorinfo.re_pwd2|default:''}</span> </td>
+        </tr>
+        <tr>
+          <td width="173" align="center">姓名：</td>
+          <td width="427" height="29"><input name="re_name" type="text" value="{$i.re_name}">
+      *<span>{$errorinfo.re_name|default:''}</span>
+        </td>
+        </tr>
+        <tr>
+          <td width="173" align="center">性别：</td>
+          <td height="27"><input name="re_sex" type="radio" class="noborder" id="radiobutton"  value="{$i.re_sex}" {if $i.re_sex eq "男"} checked="checked" {/if} checked="checked" >
+            男
+              <input name="re_sex" type="radio" class="noborder" value="{$i.re_sex}" {if $i.re_sex eq "女"} checked="checked" {/if}>
+              女 </td>
+        </tr>
+        <tr>
+          <td align="center">条形码：</td>
+          <td><input name="barcode" type="text" id="barcode" value="{$i.re_code}">
+          </td>
+        </tr>
+        <tr>
+          <td align="center">读者类型：</td>
+          <td><select name="re_typeid" class="wenbenkuang" id="booktype">
+          {foreach $reader as $r}
+              <option value="{$r.rt_id}">{$r.rt_name}</option>
+          {/foreach}    
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">职业：</td>
+          <td><input name="re_work" type="text" id="vocation" value="{$i.re_work}"></td>
+        </tr>
+        <tr>
+          <td align="center">出生日期：</td>
+          <td><input name="re_birthday" type="text" id="birthday" value="{$i.re_birthday}"></td>
+        </tr>
+        <tr>
+          <td align="center">有效证件：</td>
+          <td><select name="re_paperid" class="wenbenkuang" id="paperType">
+          {foreach $type as $t}
+              <option value="{$t.pa_id}" >{$t.pa_type}</option>
+          {/foreach}
+          </select></td>
+        </tr>
+        <tr>
+          <td align="center">证件号码：</td>
+          <td><input name="re_number" type="text" id="paperNO" value="{$i.re_number}">
+      * </td>
+        </tr>
+        <tr>
+          <td align="center">电话：</td>
+          <td><input name="re_tel" type="text" id="tel" value="{$i.re_tel}"></td>
+        </tr>
+        <tr>
+          <td align="center">E-mail：</td>
+          <td><input name="re_email" type="text" id="email" value="{$i.re_email}" size="50">
+          <span>{$errorinfo.re_email|default:''}</span>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">备注：</td>
+          <td><textarea name="re_remark" cols="50" rows="5" class="wenbenkuang" id="remark">{$i.re_remark}</textarea></td>
+        </tr>
+    {/foreach}
+    </table>
+           <table border="0">
+      <tr>
+        <td align="center">&nbsp;</td>
+        <td><input name="Submit" type="button" class="btn_grey" value="" onClick="return check(form1)"  style="background:url('{$smarty.const.IMG_URL}/submit.png')no-repeat; width:100px; height:29px;" onmouseover="this.style='background:url(\'{$smarty.const.IMG_URL}/submit2.png\')no-repeat; width:100px; height:29px;'" onmouseout="this.style='background:url(\'{$smarty.const.IMG_URL}/submit.png\')no-repeat; width:100px; height:29px;'">
+</td>
+<td>
+ <img src="{$smarty.const.IMG_URL}button.png" onClick="history.go(-1)" onmouseover="this.src='{$smarty.const.IMG_URL}button1.png'" onmouseout="this.src='{$smarty.const.IMG_URL}button.png'"></td>
+      </tr>
+    </table>
+      
+    </form>
+    </td>
+  </tr>
+</table></td>
+      </tr>
+    </table>
+</td>
+  </tr>
+</table> {include file="../Index/copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

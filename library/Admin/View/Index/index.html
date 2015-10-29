@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>图书馆管理系统</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+</head>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>{include file="./navigation.html"}</td>
+  </tr>
+	<td bgcolor="#FFFFFF">
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="100%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td align="center" valign="top" style="padding:5px;"><table width="738"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="148" valign="top">
+        <table width="738"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="753" height="44" background="{$smarty.const.IMG_URL}main_booksort.gif">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="72" valign="top" background="{$smarty.const.IMG_URL}main_booksort_1.gif"><table width="740"  border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bordercolordark="#D2E3E6" bordercolorlight="#FFFFFF">
+              <tr align="center">
+                <td width="4%" height="30" style="color:#1491FD;">排名</td>
+                <td width="10%" style="color:#1491FD;">图书条形码</td>
+                <td width="22%" style="color:#1491FD;">图书名称</td>
+                <td width="11%" style="color:#1491FD;">图书类型</td>
+                <td width="9%" style="color:#1491FD;">书架</td>
+                <td width="13%" style="color:#1491FD;">出版社</td>
+                <td width="15%" style="color:#1491FD;">作者</td>
+                <td width="8%" style="color:#1491FD;">定价(元)</td>
+                <td width="8%" style="color:#1491FD;">借阅次数</td>
+              </tr>
+          {foreach $book_info as $v}
+              <tr>
+                <td height="25" align="center">{$v@iteration}</td>
+                <td style="padding:5px;">&nbsp;{$v.bo_code}</td>
+                <td style="padding:5px;text-align:center;"><a href="{$smarty.const.__MODULE__}/Book/bookInfo/bo_id/{$v.bo_id}">{$v.bo_name}</a></td>
+                <td style="padding:5px;text-align:center;">{$v.by_name}</td>
+                <td align="center">&nbsp;{$v.ca_name}</td>
+                <td align="center">&nbsp;{$v.pr_name}</td>
+                <td align="center">{$v.bo_author}</td>
+                <td align="center">{$v.bo_price}</td>
+                <td align="center"><font style="color:red">{$v.bo_borrowtimes}</font></td>
+              </tr>
+          {/foreach}
+            </table></td>
+          
+          </tr>
+          <tr>
+            <td height="19" background="{$smarty.const.IMG_URL}main_booksort_2.gif">&nbsp;</td>
+          </tr>
+        </table>
+          </td>
+      </tr>
+      <tr align="center"><td>{$pagelist}</td></tr>
+    </table>
+      <p>&nbsp;</p></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+{include file="./copyright.html"}</td>
+  </tr>
+</table>
+</html>

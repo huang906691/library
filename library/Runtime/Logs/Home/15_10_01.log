@@ -1,0 +1,324 @@
+[ 2015-10-01T12:21:20+08:00 ] 127.0.0.1 /library/library/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011254s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.206914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.207102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006042s ]
+
+[ 2015-10-01T12:21:32+08:00 ] 127.0.0.1 /library/library/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003366s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2015-10-01T12:21:37+08:00 ] 127.0.0.1 /library/library/index.php/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+
+[ 2015-10-01T12:21:46+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2015-10-01T12:21:46+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-10-01T12:21:46+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-10-01T12:21:47+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2015-10-01T14:05:39+08:00 ] 127.0.0.1 /library/library/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2015-10-01T14:06:14+08:00 ] 127.0.0.1 /library/library/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2015-10-01T14:06:22+08:00 ] 127.0.0.1 /library/library/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005195s ]
+
+[ 2015-10-01T14:06:22+08:00 ] 127.0.0.1 /library/library/index.php/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-10-01T14:06:22+08:00 ] 127.0.0.1 /library/library/index.php/%3C?php%20echo%20$rs[photo]%20?%3E
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载控制器:
+
+[ 2015-10-01T14:06:27+08:00 ] 127.0.0.1 /library/library/index.php/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-10-01T14:06:31+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001127s ]
+
+[ 2015-10-01T14:06:31+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2015-10-01T14:06:31+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-10-01T14:06:32+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2015-10-01T14:06:33+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-10-01T14:06:34+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-10-01T14:06:35+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-10-01T14:06:35+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+
+[ 2015-10-01T14:06:36+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-10-01T14:06:36+08:00 ] 127.0.0.1 /library/library/index.php/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-10-01T14:06:36+08:00 ] 127.0.0.1 /library/library/index.php/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+

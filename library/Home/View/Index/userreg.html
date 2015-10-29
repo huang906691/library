@@ -1,0 +1,171 @@
+<html>
+<script type="text/javascript">
+function check(form1){
+  if(form1.re_username.value==""){
+    alert("请输入用户名!");form1.re_username.focus();return false;
+  }
+  if(form1.re_pwd.value==""){
+    alert("密码不能为空！");form1.re_pwd.focus();return false;
+  }
+  if(form1.re_pwd2.value==""){
+    alert("确认密码不能为空！");form1.re_pwd2.focus();return false;
+  }
+  if(form1.re_pwd.value.length<6 && form1.re_pwd.value.length>15){
+    alert("密码须在6~15位之间！");form1.re_pwd.focus();return false;
+  }
+  if(form1.re_name.value==""){
+    alert("请输入读者姓名!");form1.re_name.focus();return false;
+  }
+  if(form1.re_pwd2.value!=form1.re_pwd.value){
+    alert("两次密码必须一致！");form1.re_pwd2.focus();return false;
+  }
+
+  if(form1.re_number.value==""){
+    alert("请输入证件号码!");form1.re_number.focus();return false;
+  }
+  document.form1.submit();
+}
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/fly.ico" type="image/x-icon">
+<title>用户注册</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+</head>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+	{include file="./unavigation.html"}
+	</td>
+	</tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="99%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td height="510" valign="top" style="padding:5px;"><table width="98%" height="487"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="22" valign="top" class="word_orange">当前位置：用户注册&gt;&gt;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" height="493"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top">
+	<form name="form1" method="post" action="{$smarty.const.__SELF__}">
+	<table width="600" height="343"  border="0" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
+      <tr>
+        <td align="center" width="100">用户名：</td>
+        <td height="25" width="500"><input name="re_username" type="text" id="username">
+* <span>{$errorinfo.re_username|default:''}</span>
+  </td>
+      </tr>
+      <tr>
+        <td align="center">密码：</td>
+        <td height="18"><input name="re_pwd" type="password" id="pwd1">
+* <span>{$errorinfo.re_pwd|default:''}</span></td>
+      </tr>
+      <tr>
+        <td align="center">确认密码：</td>
+        <td height="17"><input name="re_pwd2" type="password" id="pwd2">
+* <span>{$errorinfo.re_pwd2|default:''}</span></td>
+      </tr>
+      <tr>
+        <td width="173" align="center">姓名：</td>
+        <td width="427" height="23">
+          <input name="re_name" type="text"> 
+          *<span>{$errorinfo.re_name|default:''}</span></td>
+      </tr>
+      <tr>
+        <td width="173" align="center">性别：</td>
+        <td height="19"><input name="re_sex" type="radio" class="noborder" id="radiobutton" value="男" checked>男
+          <input name="re_sex" type="radio" class="noborder" value="女">
+          女</td>
+      </tr>
+    
+      <tr>
+        <td align="center">读者类型：</td>
+        <td>
+		<select name="re_typeid" class="wenbenkuang" id="booktype">
+		  {foreach $reader as $r}
+          <option value="{$r.rt_id}">{$r.rt_name}</option>
+      {/foreach}
+        </select>        </td>
+      </tr>
+      <tr>
+        <td align="center">职业：</td>
+        <td><input name="re_work" type="text" id="vocation"></td>
+      </tr>
+      <tr>
+        <td align="center">出生日期：</td>
+        <td><input name="re_birthday" type="text" id="birthday">
+          </td>
+      </tr>
+      <tr>
+        <td align="center">有效证件：</td>
+        <td><select name="re_paperid" class="wenbenkuang" id="paperType">
+      {foreach $type as $t}
+          <option value="{$t.pa_id}" >{$t.pa_type}</option>
+      {/foreach}
+          </select></td>
+      </tr>
+      <tr>
+        <td align="center">证件号码：</td>
+        <td><input name="re_number" type="text" id="paperNO"> 
+          * </td>
+      </tr>
+      <tr>
+        <td align="center">电话：</td>
+        <td><input name="re_tel" type="text" id="tel"></td>
+      </tr>
+      <tr>
+        <td align="center">E-mail：</td>
+        <td><input name="re_email" type="text" id="email" size="50"><span>{$errorinfo.re_email|default:''}</span>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">备注：</td>
+        <td><textarea name="re_remark" cols="50" rows="5" class="wenbenkuang" id="remark"></textarea></td>
+      </tr>
+      
+    </table>
+    <table border="0">
+      <tr>
+        <td align="center">&nbsp;</td>
+        <td><input name="Submit" type="button" class="btn_grey" value="" onClick="return check(form1)"  style="background:url('{$smarty.const.IMG_URL}/submit.png')no-repeat; width:100px; height:29px;" onmouseover="this.style='background:url(\'{$smarty.const.IMG_URL}/submit2.png\')no-repeat; width:100px; height:29px;'" onmouseout="this.style='background:url(\'{$smarty.const.IMG_URL}/submit.png\')no-repeat; width:100px; height:29px;'">
+</td>
+<td>
+ <img src="{$smarty.const.IMG_URL}button.png" onClick="history.go(-1)" onmouseover="this.src='{$smarty.const.IMG_URL}button1.png'" onmouseout="this.src='{$smarty.const.IMG_URL}button.png'"></td>
+      </tr>
+    </table>
+	</form>
+	</td>
+  </tr>
+</table></td>
+      </tr>
+    </table>
+</td>
+  </tr>
+</table>{include "./copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>
+<!--引入jquery-->
+<script type="text/javascript" src="{$smarty.const.JS_URL}jquery.min.js"></script>
+<!-- 时间插件 -->
+<link href="{$smarty.const.JS_URL}datetimepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="{$smarty.const.JS_URL}datetimepicker/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="{$smarty.const.JS_URL}datetimepicker/datepicker-zh_cn.js"></script>
+<link rel="stylesheet" media="all" type="text/css" href="{$smarty.const.JS_URL}datetimepicker/time/jquery-ui-timepicker-addon.min.css" />
+<script type="text/javascript" src="{$smarty.const.JS_URL}datetimepicker/time/jquery-ui-timepicker-addon.min.js"></script>
+<script type="text/javascript" src="{$smarty.const.JS_URL}datetimepicker/time/i18n/jquery-ui-timepicker-addon-i18n.min.js"></script>
+
+<!--更改插件文字类型，时间类型-->
+<script type="text/javascript">
+$.timepicker.setDefaults($.timepicker.regional['zh-CN']);
+$("#birthday").datepicker({ dateFormat: "yy-mm-dd" });
+</script>

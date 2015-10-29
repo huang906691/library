@@ -1,0 +1,765 @@
+[ 2015-10-01T12:21:37+08:00 ] 127.0.0.1 /library/library/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0348s ]
+SQL: SELECT * FROM `li_book`  [ RunTime:0.0112s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2015-10-01T12:21:47+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/reader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `li_reader` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `li_reader`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000986s ]
+
+[ 2015-10-01T12:21:47+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-10-01T12:21:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2015-10-01T12:21:54+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-10-01T12:26:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.282239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.282384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2015-10-01T12:26:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2015-10-01T12:26:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2015-10-01T12:26:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2015-10-01T12:27:00+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2015-10-01T12:27:00+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-10-01T12:31:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0042s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0003s ]
+
+[ 2015-10-01T12:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0038s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-10-01T12:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-10-01T12:33:52+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0039s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001411s ]
+
+[ 2015-10-01T12:33:52+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+
+[ 2015-10-01T12:34:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0036s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2015-10-01T12:34:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2015-10-01T12:34:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0038s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-10-01T12:34:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2015-10-01T12:34:48+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0051s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2015-10-01T12:34:48+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+
+[ 2015-10-01T12:34:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0037s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2015-10-01T12:34:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2015-10-01T12:35:29+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0047s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-10-01T12:35:29+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-10-01T12:35:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0038s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-10-01T12:35:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-10-01T12:36:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0045s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2015-10-01T12:36:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-10-01T12:36:28+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0046s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2015-10-01T12:36:28+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2015-10-01T12:39:07+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0045s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2015-10-01T12:39:07+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-10-01T12:40:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0049s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-10-01T12:40:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2015-10-01T12:43:01+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0036s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2015-10-01T12:43:01+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2015-10-01T12:46:04+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0036s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-10-01T12:46:04+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2015-10-01T12:54:29+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0038s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2015-10-01T12:54:29+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2015-10-01T12:54:31+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0037s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2015-10-01T12:54:31+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2015-10-01T14:06:27+08:00 ] 127.0.0.1 /library/library/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `li_book`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2015-10-01T14:06:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerType
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `li_readertype`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008375s ]
+
+[ 2015-10-01T14:06:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2015-10-01T14:06:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+
+[ 2015-10-01T14:06:37+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+
+[ 2015-10-01T14:06:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-10-01T14:06:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-10-01T14:06:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-10-01T14:06:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-10-01T14:06:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-10-01T14:06:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-10-01T14:06:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-01T14:06:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-10-01T14:06:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+
+[ 2015-10-01T14:06:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-10-01T14:06:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-10-01T14:06:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/reader
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `li_reader` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `li_reader`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-10-01T14:06:40+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-10-01T14:06:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2015-10-01T14:06:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+
+[ 2015-10-01T14:06:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-10-01T14:06:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2015-10-01T14:06:41+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2015-10-01T14:06:42+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0036s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2015-10-01T14:06:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-10-01T14:08:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `li_readertype` [ RunTime:0.0041s ]
+SQL: SELECT `rt_name` FROM `li_readertype`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005075s ]
+
+[ 2015-10-01T14:08:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-10-01T14:10:35+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Reader/readerAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+

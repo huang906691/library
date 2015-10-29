@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>图书馆管理系统</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+</head>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+     {include file="../Index/navigation.html"}</td>
+  </tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="100%" height="506"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td colspan="2" align="center" valign="top" style="padding:5px;">      <table width="100%" height="458"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" valign="top"><table width="719"  height="37" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td background="{$smarty.const.IMG_URL}dangan.gif">&nbsp;</td>
+                </tr>
+              </table>
+                <table width="100%" height="25"  border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="25" align="center"><div align="left">显示条件：<a href="?" >全部</a> <a href="?zhuangtai=0">待审核</a> <a href="?zhuangtai=1">已通过</a> <a href="?zhuangtai=-1">未通过</a></div></td>
+                  </tr>
+                </table>
+    <table width="100%" height="30"  border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="36" align="center">暂无图书借阅申请信息！</td>
+                  </tr>
+                </table>
+    <table width="100%"  border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bordercolordark="#D2E3E6" bordercolorlight="#FFFFFF">
+                  <tr align="center" bgcolor="#D0E9F8">
+                    <td width="17%">条形码</td>
+                    <td width="14%">图书名称</td>
+                    <td width="19%">申请人</td>
+                    <td width="15%">申请提交时间</td>
+                    <td width="15%">处理状态</td>
+                    <td colspan="3">管理</td>
+                  </tr>
+                <tr>
+                    <td style="padding:5px;"></td>
+                    <td style="padding:5px;"><a href="book_view.php?id=<?php echo $row[id]; ?>"></a></td>
+                    <td style="padding:5px;"></td>
+                    <td style="padding:5px;">
+                      <div align="center"></div></td>
+                    <td style="padding:5px;"><div align="center">
+                      </div></td>
+                    <td width="7%" style="padding:5px;"><div align="center"><a href="?action=ok&id=<?php echo  $row[id] ?>">同意</a> </div></td>
+                    <td width="5%" style="padding:5px;"><a href="?action=no&id=<?php echo  $row[id] ?>">拒绝</a></td>
+                    <td width="8%" style="padding:5px;"><a href="?action=del&id=<?php echo  $row[id] ?>">删除</a></td>
+                  </tr>
+                </table>
+               
+    </table></td>
+    </tr>
+</table>
+    {include file="../Index/copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

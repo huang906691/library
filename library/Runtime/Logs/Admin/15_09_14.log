@@ -1,0 +1,57 @@
+[ 2015-09-14T09:58:45+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T09:58:59+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T10:03:40+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T10:03:42+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T10:07:02+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/manager.html
+ERR: Syntax Error in template "F:/homework/library/library/Admin/View\Index\manager.html"  on line 81 "&lt;td align=&quot;center&quot;&gt;&lt;input name=&quot;checkbox&quot; type=&quot;checkbox&quot; class=&quot;noborder&quot; value=&quot;checkbox&quot; disabled=&quot;disabled&quot; &lt;?php if($info[sysset]==1){echo (&quot;checked&quot;);}?&gt;&gt;&lt;/td&gt;" unknown function "echo"
+
+[ 2015-09-14T10:08:33+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/manager.html
+ERR: Syntax Error in template "F:/homework/library/library/Admin/View\Index\manager.html"  on line 56 "&lt;td align=&quot;center&quot;&gt;&lt;input name=&quot;checkbox&quot; type=&quot;checkbox&quot; class=&quot;noborder&quot; value=&quot;checkbox&quot; disabled=&quot;disabled&quot; &lt;?php if($info[sysset]==1){echo (&quot;checked&quot;);}?&gt;&gt;&lt;/td&gt;" unknown function "echo"
+
+[ 2015-09-14T10:08:33+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/manager.html
+ERR: Syntax Error in template "F:/homework/library/library/Admin/View\Index\manager.html"  on line 56 "&lt;td align=&quot;center&quot;&gt;&lt;input name=&quot;checkbox&quot; type=&quot;checkbox&quot; class=&quot;noborder&quot; value=&quot;checkbox&quot; disabled=&quot;disabled&quot; &lt;?php if($info[sysset]==1){echo (&quot;checked&quot;);}?&gt;&gt;&lt;/td&gt;" unknown function "echo"
+
+[ 2015-09-14T10:14:03+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T10:16:36+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/votelist.html
+ERR: Syntax Error in template "F:/homework/library/library/Admin/View\Index\votelist.html"  on line 34 "&lt;td width=&quot;56&quot; height=&quot;22&quot; align=&quot;center&quot;&gt;&lt;input name=&quot;id&quot; type=&quot;radio&quot; value=&lt;?php echo $rs[id]?&gt;&lt;?php if ($rs[isselected]==1){?&gt; checked &lt;?php }?&gt;&gt;&lt;/td&gt;"  - Unexpected "?"
+
+[ 2015-09-14T10:26:29+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/Borrowreglist.html
+ERR: 非法操作:Borrowreglist
+
+[ 2015-09-14T10:54:41+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/borrowQuery.html
+ERR: 非法操作:borrowQuery
+
+[ 2015-09-14T11:03:49+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/bookinto_do.php
+ERR: 非法操作:bookinto_do.php
+
+[ 2015-09-14T11:04:26+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/book_Modify.html?id=%3C?php%20echo%20$row[id];?%3E
+ERR: 非法操作:book_Modify
+
+[ 2015-09-14T11:04:26+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/book_Modify.html?id=%3C?php%20echo%20$row[id];?%3E
+ERR: 非法操作:book_Modify
+
+[ 2015-09-14T11:30:28+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/admin_login.html
+ERR: 非法操作:admin_login
+
+[ 2015-09-14T11:30:52+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/CSS/style.css
+ERR: 非法操作:CSS
+
+[ 2015-09-14T11:36:59+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/
+ERR: Syntax Error in template "F:\homework\library\library\Admin\View\Index\copyright.html"  on line 10 "&lt;td height=&quot;20&quot; align=&quot;center&quot;&gt;CopyRight &amp;copy; 2015 &lt;a href=&quot;http://fxwbux.com.cn&quot;&gt;cxwbux.com.cn&lt;/a&gt; &amp;nbsp; 飞翔软件工作室 &lt;a href=&quot;{__MODULE__}admin_login.html&quot;&gt;管理登陆&lt;/a&gt;&lt;/td&gt;" unknown tag "__MODULE__"
+
+[ 2015-09-14T11:37:16+08:00 ] 127.0.0.1 /library/library/index.php/admin/index/
+ERR: Syntax Error in template "F:\homework\library\library\Admin\View\Index\copyright.html"  on line 10 "&lt;td height=&quot;20&quot; align=&quot;center&quot;&gt;CopyRight &amp;copy; 2015 &lt;a href=&quot;http://fxwbux.com.cn&quot;&gt;cxwbux.com.cn&lt;/a&gt; &amp;nbsp; 飞翔软件工作室 &lt;a href=&quot;{__MODULE__}/admin_login.html&quot;&gt;管理登陆&lt;/a&gt;&lt;/td&gt;" unknown tag "__MODULE__"
+

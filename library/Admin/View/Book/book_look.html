@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>图书馆管理系统</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+</head>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+	{include file="../Index/navigation.html"}
+	</td>
+  </tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="99%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td height="510" align="center" valign="top" style="padding:5px;"><table width="98%" height="487"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="22" valign="top" class="word_orange">当前位置：图书档案管理 &gt; 图书详细信息 &gt;&gt;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" height="493"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top">
+	<table width="600" height="432"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  {foreach $info as $v}
+      <tr>
+        <td width="100" align="center">条&nbsp;形&nbsp;码：</td>
+        <td width="500" height="39">
+          {$v.bo_code}</td>
+        <td width="224" rowspan="9"><div align="center"><img name="" src="{$smarty.const.UPIMG}{$v.bo_photo}" width="144" height="185" alt=""></div></td>
+      </tr>
+      <tr>
+        <td align="center">图书名称：</td>
+        <td height="39"><font style="color:#4C94C1">{$v.bo_name}</font></td>
+      </tr>
+      <tr>
+        <td align="center">ISBN：</td>
+        <td>{$v.bo_isbn}</td> 
+      </tr>
+      <tr>
+        <td align="center">图书类型：</td>
+        <td>
+		  {$v.by_name} </td>
+      </tr>
+      <tr>
+        <td align="center">作&nbsp;&nbsp;者：</td>
+        <td>{$v.bo_author}</td>
+      </tr>
+      <tr>
+        <td align="center">译&nbsp;&nbsp;者：</td>
+        <td>{$v.bo_translator}</td>
+      </tr>
+      <tr>
+        <td align="center">出&nbsp;版&nbsp;社：</td>
+        <td>
+		  {$v.pr_name}</td>
+      </tr>
+      <tr>
+        <td align="center">价&nbsp;&nbsp;格：</td>
+        <td><font style="color: red">{$v.bo_price}</font>(元)</td>
+      </tr>
+      <tr>
+        <td align="center">页&nbsp;&nbsp;码：</td>
+        <td>{$v.bo_pages}&nbsp;页</td>
+      </tr>
+      <tr>
+        <td align="center">书&nbsp;&nbsp;架：</td>
+        <td>{$v.ca_name}         
+      </tr>
+      <tr>
+        <td align="center">库&nbsp;&nbsp;存：</td>
+        <td>  {$v.bo_stock}   
+      </tr>
+
+      <tr>
+        <td height="39" align="center">属性：</td>
+        <td><input name="tuijian" type="checkbox" id="tuijian" value="{$v.bo_recummend}" {if $v.bo_recummend eq '1'} checked="checked" {/if} >
+    推荐
+      <input name="bidu" type="checkbox" id="bidu" value="{$v.bo_mustread}" {if $v.bo_mustread eq '1'} checked="checked" {/if}>
+    必读</td>
+      </tr>
+      <tr>
+        <td height="39" align="center">详细介绍：</td>
+        <td>{$v.bo_introduce}</td>
+      </tr>
+    
+
+    </table>
+    <br>
+    <table>
+      <tr>
+        <td colspan="2" align="center">
+        <!--
+        <input name="Submit2" type="button" class="btn_grey" style="background:url(.{$smarty.const.IMG_URL}button.png)" onClick="history.go(-1);">
+      -->
+      <img src="{$smarty.const.IMG_URL}edit.png"  onmouseover="this.src='{$smarty.const.IMG_URL}edit1.png'" onmouseout="this.src='{$smarty.const.IMG_URL}edit.png'" onClick="window.location.href='{$smarty.const.__CONTROLLER__}/bookEdit/bo_id/{$v.bo_id}'">
+      <img src="{$smarty.const.IMG_URL}button.png" onClick="history.go(-1)" onmouseover="this.src='{$smarty.const.IMG_URL}button1.png'" onmouseout="this.src='{$smarty.const.IMG_URL}button.png'">
+        </td>
+        </tr>
+    </table>
+    {/foreach}
+	</td>
+  </tr>
+</table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>{include file="../Index/copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

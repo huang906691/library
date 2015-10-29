@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>添加调查</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+</head>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+	 {include file="../Index/navigation.html"}
+	</td>
+	</tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="99%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td height="510" valign="top" style="padding:5px;"><table width="100%" height="487"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="22" valign="top" class="word_orange">当前位置：系统设置 &gt; 调查设置 &gt;&gt;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><strong>
+          </strong>
+          <form action="voteadd.php?action=add" method="POST" name="form" id="form">
+            <table width="560" border="0" align="center" cellpadding="0" cellspacing="2" Class="border">
+              <tr class="tdbg">
+                <td width="81" height="22" align="right">主题：</td>
+                <td colspan="3"><input name="Title" type="text" size="45" maxlength="50"></td>
+              </tr>
+              <tr class="tdbg">
+                <td height="22" align="right">选项：</td>
+                <td width="281"><input type="text" name="select<?php echo $i?>" size="36">
+                </td>
+                <td width="41" align="right">票数：</td>
+                <td width="87"><input type="text" name="answer<?php echo $i?>" size="5"></td>
+              </tr>
+              <?php }?>
+              <tr class="tdbg">
+                <td height="22" align="right">调查类型：</td>
+                <td colspan="3"><select name="VoteType" id="VoteType">
+                    <option value="Single" selected>单选</option>
+                    <option value="Multi">多选</option>
+                </select></td>
+              </tr>
+              <tr class="tdbg">
+                <td height="22" align="right">&nbsp;</td>
+                <td colspan="3"><input name="IsSelected" type="checkbox" id="IsSelected" value="1" checked>
+        设为最新调查</td>
+              </tr>
+              <tr class="tdbg">
+                <td height="25" colspan=4 align=center><input name="Submit" type="submit" id="Submit" value=" 添 加 ">
+&nbsp;
+        <input  name="Reset2" type="reset" id="Reset2" value=" 清 除 ">
+                </td>
+              </tr>
+            </table>
+          </form></td>
+      </tr>
+    </table>
+</td>
+  </tr>
+</table>{include file="../Index/copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

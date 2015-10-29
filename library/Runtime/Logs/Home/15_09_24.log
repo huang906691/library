@@ -1,0 +1,20 @@
+[ 2015-09-24T17:11:48+08:00 ] 127.0.0.1 /library/library/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+INFO: [ view_parse ] --START--
+ERR: Unkown resource type 'margin'
+
+[ 2015-09-24T18:51:47+08:00 ] 127.0.0.1 /library/library/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027113s ]
+INFO: [ view_parse ] --START--
+ERR: Unkown resource type 'margin'
+

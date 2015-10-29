@@ -1,0 +1,52 @@
+/***创建管理员数据表***/
+create table li_manager(
+ma_id int not null auto_increment primary key,
+ma_name varchar(32) not null,
+ma_pwd varchar(32) not null,
+ma_time timestamp not null,
+ma_role_id tinyint(3) not null);
+
+/****创建图书数据表******/
+create table li_book(
+bo_id int not null auto_increment primary key,
+bo_code int not null comment "条形码",
+bo_name varchar(32) not null comment "书名",
+bo_ISBN varchar(32) not null comment "书号",
+bo_type varchar(32) not null comment "图书类型",
+bo_auther varchar(16) not null comment "作者",
+bo_translator varchar(16) not null comment "译者",
+bo_press varchar(16) not null comment "出版社",
+bo_price decimal(10,2) not null comment "价格",
+bo_pages varchar(16) not null comment "页数",
+bo_bookcase varchar(16) not null comment "书架",
+bo_stock int not null comment "库存"
+);
+
+insert into li_book values(null,201211,"php教程","1980/6/4","计算机","中教高级","中国","北京师范大学",80,"380","科技",35);
+
+/******创建读者数据表******/
+create table li_reader(
+re_id int not null auto_increment primary key,
+re_code int not null comment "条形码",
+re_name varchar(32) not null comment "姓名",
+re_type varchar(32) not null comment "读者类型",
+re_papers varchar(16) not null comment "证件类型",
+re_number int not null comment "证件号码",
+re_tel int not null comment "电话号码",
+re_mail varchar(32) comment "电子邮箱" 
+);
+
+insert into li_reader values(null,2015092001,"小明","学生","学生证","20150920000","13812345678","xiaoming@163.com");
+
+/******图书馆信息表*******/
+create table li_library(
+id int not null auto_increment primary key,
+libraryname varchar(32) not null comment "名称",
+curator varchar(16) not null comment "馆长",
+tel varchar(32) comment "电话",
+address varchar(64) not null comment "地址",
+email varchar(32) comment "电子邮箱",
+url varchar(32) not null comment "网址",
+createDtae timestamp not null comment "成立时间",
+introduce char comment "简介",
+bbs char comment "公告"); 

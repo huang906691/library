@@ -1,0 +1,1709 @@
+[ 2015-10-14T10:32:33+08:00 ] 127.0.0.1 /library/library/index.php/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\ba6879b8dc0b04bc98d680c225a6fdd7f7a9854a.file.admin_login.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\ba6879b8dc0b04bc98d680c225a6fdd7f7a9854a.file.admin_login.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2015-10-14T10:32:38+08:00 ] 127.0.0.1 /library/library/index.php/Admin/login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.1157s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-14T10:32:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\bbc0cc089f9840919c4fa20f3c0dda2e8d28e6ee.file.index.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\bbc0cc089f9840919c4fa20f3c0dda2e8d28e6ee.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\af6389d47900502f17932526c36b77321d86a4be.file.copyright.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\af6389d47900502f17932526c36b77321d86a4be.file.copyright.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.223743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.223848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2015-10-14T10:32:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-10-14T10:32:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-10-14T10:32:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+
+[ 2015-10-14T10:32:48+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookInfo/bo_id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0038s ]
+SQL: SELECT a.*,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id where bo_id=6 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\cb1c5ce44187c74f718da3fb08609a8c56960da6.file.book_look.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\cb1c5ce44187c74f718da3fb08609a8c56960da6.file.book_look.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2015-10-14T10:32:49+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookInfo/bo_id/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2015-10-14T10:32:52+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+
+[ 2015-10-14T10:32:53+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+
+[ 2015-10-14T10:32:54+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
+[ 2015-10-14T10:32:54+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-10-14T10:32:54+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2015-10-14T10:32:55+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+
+[ 2015-10-14T10:32:55+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-10-14T10:32:55+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-10-14T10:32:55+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-10-14T10:32:56+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+
+[ 2015-10-14T10:32:56+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-10-14T10:32:56+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2015-10-14T10:32:56+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+
+[ 2015-10-14T10:32:56+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2015-10-14T10:32:56+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-10-14T10:32:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001560s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-10-14T10:32:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2015-10-14T10:33:01+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Modify/modify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\9d7b5ef60b2aee34f10f36c9a37951e6b189c496.file.pwd_Modify.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\9d7b5ef60b2aee34f10f36c9a37951e6b189c496.file.pwd_Modify.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2015-10-14T10:33:01+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Modify/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2015-10-14T10:33:05+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/safequit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+ERR: 非法操作:safequit
+
+[ 2015-10-14T10:33:08+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+
+[ 2015-10-14T10:33:08+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-10-14T10:33:08+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:33:08+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2015-10-14T10:33:09+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-10-14T10:33:09+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-10-14T10:33:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2015-10-14T10:33:11+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-10-14T10:33:12+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-10-14T10:33:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2015-10-14T10:33:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-10-14T10:33:15+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2015-10-14T10:33:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:33:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2015-10-14T10:33:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-10-14T10:33:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-10-14T10:33:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-10-14T10:33:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2015-10-14T10:36:18+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2015-10-14T10:36:19+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2015-10-14T10:36:19+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/library
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\64a9decc94cf2d896216a35670588e8e6f3744ed.file.library_modify.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\64a9decc94cf2d896216a35670588e8e6f3744ed.file.library_modify.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2015-10-14T10:36:19+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-10-14T10:36:19+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-10-14T10:36:20+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2015-10-14T10:36:21+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-10-14T10:36:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-10-14T10:36:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-10-14T10:36:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Library/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2015-10-14T10:36:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0039s ]
+SQL: SELECT `ma_name`,`ma_id` FROM `li_manager`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\f0c5edae6b02b134344bbd5c45ee9e16fab69dfe.file.manager.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\f0c5edae6b02b134344bbd5c45ee9e16fab69dfe.file.manager.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2015-10-14T10:36:22+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-10-14T10:36:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-10-14T10:36:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-10-14T10:36:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-10-14T10:36:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-10-14T10:36:23+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-10-14T10:36:24+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2015-10-14T10:36:25+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-10-14T10:36:25+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-10-14T10:36:25+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-10-14T10:36:26+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Manager/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2015-10-14T10:36:26+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `li_booktype` [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_booktype` LIMIT 1   [ RunTime:0.0003s ]
+SQL: select by_id,by_name from li_booktype Limit 0, 8 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\679e94354cfbbc8af321bedb9f3b5668992f5dd6.file.booktype.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\679e94354cfbbc8af321bedb9f3b5668992f5dd6.file.booktype.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2015-10-14T10:36:26+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-10-14T10:36:27+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-10-14T10:36:27+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2015-10-14T10:36:27+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+
+[ 2015-10-14T10:36:27+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2015-10-14T10:36:27+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+
+[ 2015-10-14T10:36:28+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/booktype_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\3ddf6b84892b876eda371aed9b64c978d27696ac.file.booktype_add.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\3ddf6b84892b876eda371aed9b64c978d27696ac.file.booktype_add.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index: v F:\homework\library\library\Runtime\Cache\3ddf6b84892b876eda371aed9b64c978d27696ac.file.booktype_add.html.php 第 86 行.
+NOTIC: [8] Trying to get property of non-object F:\homework\library\library\Runtime\Cache\3ddf6b84892b876eda371aed9b64c978d27696ac.file.booktype_add.html.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2015-10-14T10:36:30+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-10-14T10:36:31+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-10-14T10:36:33+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-10-14T10:36:33+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2015-10-14T10:36:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/BookType/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-10-14T10:36:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Publishing/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `li_press` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_press` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `li_press` LIMIT 0,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\e24a5be5830404ca5c3fac755d543a15e550d5e5.file.publishing.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\e24a5be5830404ca5c3fac755d543a15e550d5e5.file.publishing.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2015-10-14T10:36:34+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Publishing/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+
+[ 2015-10-14T10:36:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Publishing/index?&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `li_press` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_press` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `li_press` LIMIT 8,8   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: admin_name F:\homework\library\library\Runtime\Cache\d129012fcefb8faa6ff3cef3072120030c133e90.file.navigation.html.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2015-10-14T10:36:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Publishing/index?&page=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `li_press` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_press` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `li_press` LIMIT 8,8   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2015-10-14T10:36:36+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Publishing/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-10-14T10:36:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/book
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id Limit 0, 10  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\c491af921ced6f9d0daa3351ab5580614066af13.file.book.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\c491af921ced6f9d0daa3351ab5580614066af13.file.book.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2015-10-14T10:36:39+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2015-10-14T10:36:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-10-14T10:36:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2015-10-14T10:36:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2015-10-14T10:36:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/borrowlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\ffb6473cf53afbca2363720b0e5642ce37675bed.file.borrowreglist.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\ffb6473cf53afbca2363720b0e5642ce37675bed.file.borrowreglist.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2015-10-14T10:36:43+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-10-14T10:36:49+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-10-14T10:36:50+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2015-10-14T10:36:50+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-10-14T10:36:50+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-10-14T10:36:50+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2015-10-14T10:36:51+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2015-10-14T10:36:51+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/bookBorrow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\56f47e202b7c92a647eff55131c30970cc7b9589.file.bookBorrow.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\56f47e202b7c92a647eff55131c30970cc7b9589.file.bookBorrow.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2015-10-14T10:36:51+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2015-10-14T10:36:57+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-10-14T10:36:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/bookRenew
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\e6b57c56834beb2af157fad597f0661ddea00ba8.file.bookRenew.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\e6b57c56834beb2af157fad597f0661ddea00ba8.file.bookRenew.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2015-10-14T10:36:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-10-14T10:36:59+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2015-10-14T10:37:00+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+
+[ 2015-10-14T10:37:00+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/bookBack
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\48bbd46ef83e6963b16b6d2c2ee35d53aa39e397.file.bookBack.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\48bbd46ef83e6963b16b6d2c2ee35d53aa39e397.file.bookBack.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2015-10-14T10:37:00+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Borrow/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2015-10-14T11:01:12+08:00 ] 127.0.0.1 /library/library/index.php/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002064s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-10-14T11:01:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-10-14T11:01:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2015-10-14T11:01:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Login/checkManagerMessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `li_manager` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `li_manager` WHERE ( ma_name='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-10-14T11:01:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_author,a.bo_price,a.bo_borrowtimes,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id order by bo_borrowtimes desc Limit 0, 10 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2015-10-14T11:01:16+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Index/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2015-10-14T11:01:25+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/book
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_stock,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id Limit 0, 10  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2015-10-14T11:01:25+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2015-10-14T11:02:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/book
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_stock,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id Limit 0, 10  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2015-10-14T11:02:10+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2015-10-14T11:02:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/book
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `li_book` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `li_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.bo_id,a.bo_code,a.bo_name,a.bo_stock,b.by_name,c.pr_name,d.ca_name FROM `li_book`as a left join li_booktype as b on a.bo_typeid=b.by_id left join li_press as c on a.bo_pressid=c.pr_id left join li_bookcase as d on a.bo_bookcaseid=d.ca_id Limit 0, 10  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2015-10-14T11:02:58+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2015-10-14T11:03:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/bookinto.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for F:/homework/library/library/Runtime/Cache\38a793a3256212ee6d49f76aa7128f65082db68b.file.bookinto.html.php F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(F:/homework/library/library/Runtime/Cache\38a793a3256212ee6d49f76aa7128f65082db68b.file.bookinto.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory F:\homework\library\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-10-14T11:03:03+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/line.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-10-14T11:13:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2015-10-14T11:13:13+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-10-14T11:13:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/Images/item_over.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2015-10-14T11:13:14+08:00 ] 127.0.0.1 /library/library/index.php/Admin/Book/.Images/item_out.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+

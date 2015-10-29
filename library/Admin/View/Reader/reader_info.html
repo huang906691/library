@@ -1,0 +1,106 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>读者信息</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+</head>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+	{include file="../Index/navigation.html"}
+	</td>
+	</tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="99%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td height="510" valign="top" style="padding:5px;"><table width="98%" height="487"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="22" valign="top" class="word_orange">当前位置：读者管理 &gt; 读者档案管理 &gt; 查看读者信息 &gt;&gt;</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" height="493"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" valign="top">
+	<table width="600" height="432"  border="0" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
+  {foreach $info as $v}
+      <tr>
+        <td width="173" align="center">姓名：</td>
+        <td width="427" height="39">
+          <input name="name" type="text" value="{$v.re_name}"> 
+         </td>
+      </tr>
+      <tr>
+        <td width="173" align="center">性别：</td>
+        <td height="35">
+
+		  <input name="sex" type="radio" class="noborder" id="radiobutton"  value="{$v.re_sex}" {if $v.re_sex eq '男'}  checked='checked' {/if}>男
+
+          <input name="sex" type="radio" class="noborder" value="{$v.re_sex}" {if $v.re_sex eq '女'} checked='checked' {/if} >女
+          <input name="sex" type="radio" class="noborder" value="{$v.re_sex}" {if $v.re_sex eq '保密'}  checked='checked' {/if} >保密
+
+          </td>
+      </tr>
+      <tr>
+        <td align="center">条形码：</td>
+        <td><input name="barcode" type="text" id="barcode" value="{$v.re_code}">
+ </td>
+      </tr>
+      <tr>
+        <td align="center">读者类型：</td>
+        <td><input name="typename" type="text" id="typename" value="{$v.rt_name}"></td>
+      </tr>
+      <tr>
+        <td align="center">职业：</td>
+        <td><input name="vocation" type="text" id="vocation" value="{$v.re_work}"></td>
+      </tr>
+      <tr>
+        <td align="center">出生日期：</td>
+        <td><input name="birthday" type="text" id="birthday" value="{$v.re_birthday}"></td>
+      </tr>
+      <tr>
+        <td align="center">有效证件：</td>
+        <td><input name="paperType" type="text" id="paperType" value="{$v.pa_type}"></td>
+      </tr>
+      <tr>
+        <td align="center">证件号码：</td>
+        <td><input name="paperNO" type="text" id="paperNO" value="{$v.re_number}"> 
+           </td>
+      </tr>
+      <tr>
+        <td align="center">电话：</td>
+        <td><input name="tel" type="text" id="tel" value="{$v.re_tel}"></td>
+      </tr>
+      <tr>
+        <td align="center">E-mail：</td>
+        <td><input name="email" type="text" id="email" value="{$v.re_email}" size="50">
+          </td>
+      </tr>
+      <tr>
+        <td align="center">备注：</td>
+        <td><textarea name="remark" cols="60" rows="6" class="wenbenkuang" id="remark">{$v.re_remark}</textarea></td>
+      </tr>
+      {/foreach}
+      <tr>
+        <td align="center">&nbsp;</td>
+        <td>
+  <input name="Submit2" type="button" class="btn_grey" value="返回" onClick="history.back()"></td></tr>
+    </table>
+	</td>
+  </tr>
+</table></td>
+      </tr>
+    </table>
+</td>
+  </tr>
+</table>{include file="../Index/copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

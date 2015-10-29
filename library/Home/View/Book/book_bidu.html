@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>图书馆管理系统</title>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/fly.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+      {include file="../Index/unavigation.html"}</td>
+  </tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="100%" height="506"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td width="26%" height="173" align="center" valign="top" style="padding:5px;"><table width="100%" height="168"  border="0" class="tableBorder_gray">
+      <tr>
+        <td width="100%" height="29" bgcolor="#FF9900"><strong>公 告</strong></td>
+      </tr>
+      <tr>
+        <td height="124">
+		<marquee direction="up" height="105" scrollAmount=1  behavior="scroll" scrollDelay=4 width=185
+            align="right" onMouseOver="this.stop()" onMouseOut="this.start()" >
+           <ul style="list-style:none;padding:0px;">
+          {foreach $library as $key=>$v}
+            <li>{$v}</li>
+          {/foreach}
+          </ul>
+            </marquee> </td>
+      </tr>
+    </table></td>
+    <td width="74%" rowspan="2" align="center" valign="top" style="padding:5px;"><table width="98%" height="487"  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" valign="top"><table width="100%" height="37" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td background="{$smarty.const.IMG_URL}mustread.png">&nbsp;</td>
+            </tr>
+          </table>
+           <br>
+            
+            <table width="98%"  border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bordercolordark="#D2E3E6" bordercolorlight="#FFFFFF">
+              <tr align="center" bgcolor="#D0E9F8" height="35">
+                <td width="14%" style="color:#1883E9;">条形码</td>
+                <td width="24%" style="color:#1883E9;">图书名称</td>
+                <td width="20%" style="color:#1883E9;">图书类型</td>
+                <td width="17%" style="color:#1883E9;">出版社</td>
+                <td width="12%" style="color:#1883E9;">书架</td>
+                <td width="13%" style="color:#1883E9;">库存</td>
+              </tr>
+        {foreach $mustread as $m} 
+              <tr align="center">
+                <td style="padding:5px;">&nbsp;{$m.bo_code}</td>
+                <td style="padding:5px;"><a href="{$smarty.const.__CONTROLLER__}/bookInfo/bo_id/{$m.bo_id}">{$m.bo_name}</a></td>
+                <td style="padding:5px;">&nbsp;{$m.by_name}</td>
+                <td style="padding:5px;">&nbsp;{$m.pr_name}</td>
+                <td style="padding:5px;">&nbsp;{$m.ca_name}</td>
+                <td style="padding:5px;">{$m.bo_stock}</td>
+              </tr>
+      {/foreach}
+            </table>
+            <table><tr><td>{$pagelist}</td></tr></table>
+            </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="325" align="center" valign="top" style="padding:5px;">      
+    <table width="100%" height="121" border="0" class="tableBorder_grey">
+        <tr>
+          <td height="30" bgcolor="#FF9900"><strong>图书查询</strong></td>
+        </tr>
+        <tr>
+          <td height="83" style="background-image:url('{$smarty.const.IMG_URL}login.jpg');">
+            <table width="100%"  border="0">
+              <form name="form1" method="get" action="{$smarty.const.__MODULE__}/Book/bookQuery">
+                <tr>
+                  <td width="35%">条&nbsp;形&nbsp;码：</td>
+                  <td width="65%"><input name="code" type="text" class="txt_grey" id="username" size="15" style="background:transparent" placeholder="输入条形码"></td>
+                </tr>
+                <tr>
+                  <td>图书名称：</td>
+                  <td><input name="bookname" type="text" class="txt_grey" id="pwd" size="15" style="background:transparent" placeholder="输入图书名称"></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><div align="center">
+                      <input name="Submit" type="submit" class="btn_grey" value="查询">
+                      <input name="Submit" type="reset" class="btn_grey" value="重置" >
+                  </div></td>
+                </tr>
+              </form>
+            </table></td>
+        </tr>
+      </table>
+      <table width="100%" height="194"  border="0" class="tableBorder_gray">
+        <tr>
+          <td height="31" bgcolor="#FF9900"><strong>站内调查</strong></td>
+        </tr>
+        <tr><?php include("function.php"); ?>
+          <td height="155" valign="center" style="background-image:url('{$smarty.const.IMG_URL}/diaocha.jpg');opacity:0.7;"><font style="color:red;font-size:20px;padding-left: 55px">暂无调查</font></td>
+        </tr>
+      </table></td>
+    </tr>
+</table>
+    {include file="../Index/copyright.html"}</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

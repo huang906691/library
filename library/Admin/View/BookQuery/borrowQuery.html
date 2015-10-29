@@ -1,0 +1,52 @@
+<html>
+<head>
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<script src="{$smarty.const.JS_URL}function.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+</head>
+<script language="javascript">
+function check(myform){
+	if(myform.flag1.checked==false && myform.flag2.checked==false){
+		alert("请选择查询方式!");return false;
+	}
+	if (myform.flag2.checked){
+		if(myform.sdate.value==""){
+			alert("请输入开始日期");myform.sdate.focus();return false;
+		}		
+		if(CheckDate(myform.sdate.value)){
+			alert("您输入的开始日期不正确（如：2007-12-01）\n 请注意闰年!");myform.sdate.focus();return false;
+		}
+		if(myform.edate.value==""){
+			alert("请输入结束日期");myform.edate.focus();return false;
+		}		
+		if(CheckDate(myform.edate.value)){
+			alert("您输入的结束日期不正确（如：2007-12-01）\n 请注意闰年!");myform.edate.focus();return false;
+		}
+	}
+}
+</script>
+<body>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" class="tableBorder">
+  <tr>
+    <td>
+	{include file="../Index/navigation.html"}
+	</td>
+  </tr>
+	<td>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#FFFFFF"><table width="99%" height="510"  border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" class="tableBorder_gray">
+  <tr>
+    <td height="510" align="left" valign="top" style="padding:5px;">正在建设中...</td>
+  </tr>
+    </table>{include file="../Index/copyright.html"}</td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>修改出版社信息</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="{$smarty.const.CSS_URL}style.css" rel="stylesheet">
+<link rel="shortcut icon" href="{$smarty.const.IMG_URL}/admin.ico" type="image/x-icon">
+<script type="text/javascript">
+ /****使用ajax显示保存成功信息****/
+window.onload=function(){
+  //获取表单信息
+  var fm=document.getElementsByTagName("form")[0];
+  //添加提交事件
+  fm.onsubmit=function(evt){
+  //通过html5标签获取信息
+  var pr_info=new FormData(fm);
+  //实例化ajax
+  var xhr=new XMLHttpRequest();
+  //ajax改变事件
+  xhr.onreadystatechange=function(){
+    if(xhr.readyState==4){
+      document.getElementById("info").innerHTML=xhr.responseText;
+      setTimeout('window.close()', 2000);
+    }
+  }
+  xhr.open("post","{$smarty.const.__CONTROLLER__}/pressEdit/"+Math.random());
+  xhr.send(pr_info);
+  //阻止表单提交
+  evt.preventDefault();
+  
+  }
+  }
+  
+</script>
+<script type="text/javascript">
+  function check(form1){
+    if(form1.pr_name.value==""){
+      alert("修改名称不能为空！");
+      form1.pr_name.focus();
+      return false;
+    }
+  }
+</script>
+</head>
+<body>
+<table width="292" height="175" border="0" cellpadding="0" cellspacing="0" background="{$smarty.const.IMG_URL}subBG.jpg">
+  <tr>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="3%" height="25">&nbsp;</td>
+        <td width="94%">&nbsp;</td>
+        <td width="3%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><table width="100%" height="131"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" valign="top"><form name="form1" method="post" action="{$smarty.const.__CONTROLLER__}/pressEdit">
+                <table width="100%" height="114"  border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="74" align="center">出版社名称：
+                      <input name="pr_name" type="text" id="pubname" value="{$press_name.pr_name}">
+                      <input name="pr_id" type="hidden" id="id" value="{$press_name.pr_id}"></td>
+                    </tr>
+                  <tr>
+                    <td align="center"><input name="submit1" type="submit" class="btn_grey" value="保存" onClick="return check(form1)">
+                      &nbsp;
+                      <input name="submit2" type="button" class="btn_grey" value="关闭" onClick="window.close();"></td>&nbsp;&nbsp;<span id="info"></span>
+                    </tr>
+                </table>
+            </form></td>
+          </tr>
+        </table></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
